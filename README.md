@@ -1,27 +1,11 @@
-# Introduction
+# Weex 简单学习
 
-This boilerplate is targeted towards large, serious projects and assumes you are somewhat familiar with Webpack and `weex-loader`. 
+## 项目搭建
 
-## Quickstart
++ 安装：Java 等系统环境自行解决，`yarn global add weex-toolkit` 安装全局工具，`weex create project-name` 初始化项目，`weex platform add iod/android` 安装平台环境所需资源包
 
-To use this template, scaffold a project with [weexpack v1.1.1+](https://github.com/weexteam/weex-pack).
++ 开发：`npm run serve` 开启供 native 调用 bundle 的 hotReload 服务系统，手机上安装 playground 即可扫描 serve 对应的二维码进行开发
 
-``` bash
-$ npm install -g weex-toolkit
-$ weex create my-project # default will create the webpack template
-$ cd my-project && npm start
-```
++ 调试：安装 weex-devtool，可能会建立一个 socket 和一个调试页面，用 playground 扫描调试页的二维码后，即可进行代码断点及页面节点调试
 
-## How to use less/sass/pug
-
-Take `sass` for example:
-
-```
-$ npm i node-sass sass-loader --save
-```
-
-Then, you just need to change the `style` tag as: `<style lang="sass"><style>`.
-
-## How to create your own template
-
-See [How-to-create-your-own-template](https://github.com/weex-templates/How-to-create-your-own-template).
++ 模拟器调试：`weex run ios`、`weex run android`，需要加载很多内容，容易被墙？报了些错，慢慢来
