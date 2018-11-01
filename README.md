@@ -12,6 +12,8 @@
 
 ## 项目开发
 
-### Vue-router
+### Vue-router 及 Vuex
+
++ Weex 使用原生的 navigator 来管理页面实例，多个实例之间的状态是隔离的。也就是说，Vuex 和 vue-router 只能作用于当前一个页面，无法在多个页面间共享状态。
 
 + `router-link` 基于 DOM 特性，所以在 Weex 中需要使用编程式导航

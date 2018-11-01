@@ -1,6 +1,6 @@
 /* global Vue */
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import HelloWorld from '@/pages/HelloWorld'
 import Native from '@/pages/native'
 
 Vue.use(Router)
