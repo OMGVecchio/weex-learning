@@ -9,3 +9,9 @@
 + 调试：安装 weex-devtool，可能会建立一个 socket 和一个调试页面，用 playground 扫描调试页的二维码后，即可进行代码断点及页面节点调试
 
 + 模拟器调试：`weex run ios`、`weex run android`，需要加载很多内容，容易被墙？报了些错，慢慢来
+
+## 项目开发
+
+### Vue-router
+
++ `router-link` 基于 DOM 特性，所以在 Weex 中需要使用编程式导航
