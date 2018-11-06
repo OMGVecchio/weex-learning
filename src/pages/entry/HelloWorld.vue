@@ -1,12 +1,12 @@
 <template>
-  <text @click="go">Native 组件</text>
+  <text @click="go">go hello world 2</text>
 </template>
 
 <script>
 export default {
   methods: {
     go() {
-      this.$router.push('/native')
+      this.$router.push('/hello2')
     },
   },
 }

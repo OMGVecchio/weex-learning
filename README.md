@@ -12,8 +12,14 @@
 
 ## 项目开发
 
+### 项目配置
+
++ 新版本 weex，想搭建一个多页应用，似乎需要在 `configs/webpack.common.conf.js` 里修改 entry。因为有 weexConfig 和 webConfig，每次加一个页面改两处太繁琐，后续考虑做个自动化文件入口加载。暂时只加载 weex 多入口，网页调试会有问题，为啥 router 文件会配置在 config 里，全局只有一个 router 么，通过 router 自动划分 navigator ？
+
++ 不知道是不是我使用方式错误的问题，总感觉每次增加一个 navigator 和 router 页面文件都需要去配置，是一件很麻烦的事情
+
 ### Vue-router 及 Vuex
 
-+ Weex 使用原生的 navigator 来管理页面实例，多个实例之间的状态是隔离的。也就是说，Vuex 和 vue-router 只能作用于当前一个页面，无法在多个页面间共享状态。
++ Weex 使用原生的 navigator 来管理页面实例，多个实例之间的状态是隔离的。也就是说，Vuex 和 vue-router 只能作用于当前一个页面，无法在多个页面间共享状态
 
 + `router-link` 基于 DOM 特性，所以在 Weex 中需要使用编程式导航

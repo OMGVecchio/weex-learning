@@ -1,6 +1,6 @@
 <template>
   <div>
-    原生组件
+    <text>原生组件</text>
   </div>
 </template>
 
